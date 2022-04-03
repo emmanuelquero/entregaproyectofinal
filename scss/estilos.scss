@@ -1,0 +1,61 @@
+@import "colores";
+@import "estructura";
+
+$margenderecho: 5px;
+$blue: blue; 
+$fuente: 20px;
+/*condicionales*/
+$fuenteletra: estilo;
+$mostrar:true;
+$ocultar:false;
+$temperatura: 20;
+/*maps*/
+$indexx :(divv:darkblue, barra:blue, precios:blue, footer:black);
+@each $a, $b in $indexx {
+    .#{$a} {
+        background-color: $b;
+    }
+}
+/*bucle*/
+$colorindex :(divv:white, barra: white, precios : black, footer:white);
+@each $a, $b in $colorindex {
+    .#{$a} {
+        color: $b;
+    }
+}
+/*mapget*/
+$estilos: (
+    distancia:10px 30px,
+    margenn:10px, 
+    ancho:400px    
+);
+.imagenn {
+    transition: 5s; 
+    .imagenn:hover {
+      transform: rotate(360dg); }
+    }
+.tituloo {
+    transition: 3s; 
+    &:hover {
+      transform: translate(10px, 10px); }
+    }
+.titulos {
+    transition: 5s; 
+    &:hover {
+      transform: scale(3.1); }
+    }
+    .divv {
+        background-color: (darkblue);
+        border: 2px solid black; }
+        .divv a {
+          color: white;
+          @if $fuenteletra == verdanaa {
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+          } @else if $fuenteletra == ariall {
+              font-family: Arial, Helvetica, sans-serif;
+          } @else {
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;         
+          }
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          text-decoration: none; }
+      

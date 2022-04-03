@@ -1,0 +1,55 @@
+body {
+  margin: 0; }
+
+/*condicionales*/
+/*maps*/
+.divv {
+  background-color: darkblue; }
+
+.barra {
+  background-color: blue; }
+
+.precios {
+  background-color: blue; }
+
+.footer {
+  background-color: black; }
+
+/*bucle*/
+.divv {
+  color: white; }
+
+.barra {
+  color: white; }
+
+.precios {
+  color: black; }
+
+.footer {
+  color: white; }
+
+/*mapget*/
+.imagenn {
+  transition: 5s; }
+  .imagenn .imagenn:hover {
+    transform: rotate(360dg); }
+
+.tituloo {
+  transition: 3s; }
+  .tituloo:hover {
+    transform: translate(10px, 10px); }
+
+.titulos {
+  transition: 5s; }
+  .titulos:hover {
+    transform: scale(3.1); }
+
+.divv {
+  background-color: darkblue;
+  border: 2px solid black; }
+
+.divv a {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none; }
