@@ -34,6 +34,18 @@ $estilos: (
     .imagenn:hover {
       transform: rotate(360dg); }
     }
+.headerr {
+    background-image: linear-gradient(to bottom, white, blue);
+    @if $mostrar {
+    border: 2px solid black;}
+    text-align: center;
+    font-size: ($fuente * 2);
+        p {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: ($fuente*2);
+        font-style: italic; }
+         }
+      
 .tituloo {
     transition: 3s; 
     &:hover {
@@ -44,10 +56,10 @@ $estilos: (
     &:hover {
       transform: scale(3.1); }
     }
-    .divv {
-        background-color: (darkblue);
-        border: 2px solid black; }
-        .divv a {
+.divv {
+    background-color: (darkblue);
+    border: 2px solid black; }
+    .divv a {
           color: white;
           @if $fuenteletra == verdanaa {
               font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -58,4 +70,70 @@ $estilos: (
           }
           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
           text-decoration: none; }
-      
+.barra {
+    text-decoration: none;
+    
+}
+.tituloprecio {
+    text-align: center;
+}
+.footer {
+    @if $temperatura <40 {
+        background-color: black;
+    } @else if $temperatura <60 {
+        background-color: orange;
+    } @else if ($temperatura <=100) {
+        background-color: red;
+    } @else {
+        background-color: yellow;
+    }
+}
+.productos {
+    color: black
+}
+.subrayado {
+    text-decoration: underline;
+}
+.productos--aceptar{
+    @extend.productos;
+    @extend.subrayado;
+    background-color: lightblue;
+    color: black;
+} 
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: ($fuente)+10;
+    box-shadow: 0px 1px 10px rgba 0, 0, 0, 0.3;
+    z-index: 100; 
+    &:hover {
+      text-decoration: none;
+      color: #0df053;
+      background: #fff; }
+    }
+    @mixin sizes ($width,$height) {
+        height: $height;
+        width: $width;
+    }    
+    .imagenprincipal {
+        @include sizes(300px, 250px )
+    }
+    @mixin sizes2($text,$border,$background,$margin,$padding) {
+        text-align: $text;
+        border:$border;
+        background-color: $background;
+        margin: $margin;
+        padding: $padding;
+    } 
+    .tituloproductos {
+        @include sizes2(center,4px solid black ,blue ,10px ,20px )
+    }
+    

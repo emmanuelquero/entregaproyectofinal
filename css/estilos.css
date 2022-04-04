@@ -1,5 +1,285 @@
+/*condicionales*/
+/*maps*/
+.divv {
+  background-color: darkblue; }
+
+.barra {
+  background-color: blue; }
+
+.precios {
+  background-color: blue; }
+
+.footer {
+  background-color: black; }
+
+/*bucle*/
+.divv {
+  color: white; }
+
+.barra {
+  color: white; }
+
+.precios {
+  color: black; }
+
+.footer {
+  color: white; }
+
+/*mapget*/
+.divv {
+  background-color: darkblue; }
+
+a {
+  color: white; }
+
+.barra {
+  background-color: blue;
+  color: white;
+  border: 3px solid black; }
+  .barra:hover {
+    color: white;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, black, blue); }
+
+.precios {
+  background-color: blue;
+  color: black; }
+
+.tituloprecio {
+  background-image: linear-gradient(to right, beige, #2e22cc, black);
+  border: 2px solid black;
+  color: black; }
+
+.descripcion {
+  border: 3px solid black;
+  background-color: #143e7c;
+  color: whitesmoke; }
+
+.titulo {
+  border: 2px solid black;
+  color: black;
+  background-color: beige; }
+
+.footer {
+  border: 2px solid black; }
+  .footer p {
+    color: white; }
+
+.formulario {
+  border: 2px solid black;
+  background-color: beige; }
+  .formulario:hover {
+    border: 1px solid black; }
+
+.locales {
+  background-image: radial-gradient(blue, cyan, white);
+  border: 4px solid black; }
+
+.productos, .productos--aceptar {
+  background-image: radial-gradient(blue, cyan, white);
+  border: 4px solid black; }
+
+.titulofotos {
+  background-image: blue;
+  color: black; }
+
+.tituloproductos {
+  background-color: blue;
+  color: black; }
+
+.precios {
+  background-color: blue;
+  color: black; }
+
+.tituloprecio {
+  color: black; }
+
+.descripcion {
+  color: black;
+  background-color: darkblue; }
+
+.titulo {
+  color: black;
+  background-color: beige; }
+
+.footer {
+  background-color: black; }
+  .footer p {
+    color: white; }
+
+.formulario {
+  background-color: beige; }
+
+.titulofotos {
+  color: black;
+  background-color: blue; }
+
+.tituloproductos {
+  color: black;
+  background-color: blue; }
+
+/*condicionales*/
+/*maps*/
+.divv {
+  background-color: darkblue; }
+
+.barra {
+  background-color: blue; }
+
+.precios {
+  background-color: blue; }
+
+.footer {
+  background-color: black; }
+
+/*bucle*/
+.divv {
+  color: white; }
+
+.barra {
+  color: white; }
+
+.precios {
+  color: black; }
+
+.footer {
+  color: white; }
+
+/*mapget*/
 body {
   margin: 0; }
+
+.barra {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 10px; }
+
+.imagenn {
+  transition: 5s; }
+  .imagenn:hover {
+    transform: translate(10px, 10px); }
+
+.titulos {
+  transition: 5s; }
+  .titulos:hover {
+    transform: scale(3.1); }
+
+.menu {
+  padding: 10px 30px; }
+  .menu ul {
+    width: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+    .menu ul li {
+      text-decoration: overline; }
+
+.divv {
+  border: 2px solid black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none; }
+
+.headerr {
+  text-align: center;
+  font-size: 40px;
+  border: 2px solid black; }
+  .headerr p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-style: italic; }
+
+.precios {
+  border: 2px solid black;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: 4s; }
+  .precios:hover {
+    transform: scale(2.5); }
+
+.descripcion {
+  text-align: center;
+  font-size: 15px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+.titulo {
+  text-align: center; }
+
+.footer {
+  margin-bottom: 0px; }
+  .footer p {
+    text-align: center; }
+
+.formulario {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: max-content;
+  width: 100px;
+  height: 45px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  transition: all 2s; }
+  .formulario:hover {
+    width: 200px;
+    height: 70px;
+    font-size: 18px; }
+
+.locales {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 10px;
+  padding: 20px;
+  border-style: dashed; }
+
+.productos, .productos--aceptar {
+  margin: 10px;
+  padding: 20px;
+  border-style: groove; }
+
+.imagenproducto {
+  transition: 4s; }
+  .imagenproducto:hover {
+    width: 400px;
+    height: 400px;
+    font-size: 48px;
+    border: 1px solid black; }
+
+.titulofotos {
+  text-align: center;
+  border: 4px solid black;
+  margin: 10px;
+  padding: 20px; }
+
+.tituloproductos {
+  text-align: center;
+  border: 4px solid black;
+  background-color: blue;
+  margin: 10px;
+  padding: 20px; }
+
+.imagenlocales {
+  transition: 4s; }
+  .imagenlocales:hover {
+    transform: scale(1, 2); }
+
+.letracontacto {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+.parrafoproductos {
+  font-size: 28px;
+  font-style: italic; }
+
+.logohistoria {
+  transform: 5s; }
+  .logohistoria:hover {
+    transform: scale(2.2); }
+
+.marginimg {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.distanciatitulo {
+  margin-top: 10px; }
+
+.imagenprincipal {
+  height: 250px;
+  width: 300px; }
 
 /*condicionales*/
 /*maps*/
@@ -34,6 +314,16 @@ body {
   .imagenn .imagenn:hover {
     transform: rotate(360dg); }
 
+.headerr {
+  background-image: linear-gradient(to bottom, white, blue);
+  border: 2px solid black;
+  text-align: center;
+  font-size: 40px; }
+  .headerr p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-style: italic; }
+
 .tituloo {
   transition: 3s; }
   .tituloo:hover {
@@ -53,3 +343,52 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: none; }
+
+.barra {
+  text-decoration: none; }
+
+.tituloprecio {
+  text-align: center; }
+
+.footer {
+  background-color: black; }
+
+.productos, .productos--aceptar {
+  color: black; }
+
+.subrayado, .productos--aceptar {
+  text-decoration: underline; }
+
+.productos--aceptar {
+  background-color: lightblue;
+  color: black; }
+
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba 0, 0, 0, 0.3;
+  z-index: 100; }
+  .btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff; }
+
+.imagenprincipal {
+  height: 250px;
+  width: 300px; }
+
+.tituloproductos {
+  text-align: center;
+  border: 4px solid black;
+  background-color: blue;
+  margin: 10px;
+  padding: 20px; }

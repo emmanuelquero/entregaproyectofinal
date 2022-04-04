@@ -1,0 +1,128 @@
+$fondo_primario: darkblue;
+$color_primario: white;
+$fondo_secundario: blue;
+$color_secundario: black;
+$fondo_terciario: beige;
+$fondo_cuarto: black;
+$fondo_quinto: #0df053;
+$margenderecho: 5px;
+$blue: blue; 
+$fuente: 20px;
+/*condicionales*/
+$fuenteletra: estilo;
+$mostrar:true;
+$ocultar:false;
+$temperatura: 20;
+/*maps*/
+$indexx :(divv:darkblue, barra:blue, precios:blue, footer:black);
+@each $a, $b in $indexx {
+    .#{$a} {
+        background-color: $b;
+    }
+}
+/*bucle*/
+$colorindex :(divv:white, barra: white, precios : black, footer:white);
+@each $a, $b in $colorindex {
+    .#{$a} {
+        color: $b;
+    }
+}
+/*mapget*/
+$estilos: (
+    distancia:10px 30px,
+    margenn:10px, 
+    ancho:400px,
+); 
+.divv { 
+    background-color: $fondo_primario;
+}
+a {
+    color: $color_primario;
+}  
+.barra {
+    background-color: $blue;
+    color: white;
+    border: 3px solid black;
+    &:hover{
+        color: white;
+        border: 1px solid black;
+        background-image: linear-gradient(to bottom, black, blue);
+    }
+}
+.precios {
+    background-color: $blue;
+    color: black;
+}
+.tituloprecio {
+    background-image: linear-gradient(to right, beige,#2e22cc, black );
+    border: 2px solid black;
+    color: black;
+}
+.descripcion {
+    border: 3px solid black;
+    background-color: #143e7c;
+    color: whitesmoke; }
+.titulo {
+    border: 2px solid black;
+    color: black;
+    background-color: beige;
+ }
+.footer {
+    border: 2px solid black;
+    p {
+        color: white;
+    }
+}
+.formulario {
+    border: 2px solid black;
+    background-color: beige;
+    &:hover {
+        border: 1px solid black;
+    }
+}
+.locales {
+    background-image: radial-gradient(blue,cyan,white);
+    border: 4px solid black;
+}
+.productos {
+    background-image: radial-gradient(blue,cyan,white);
+    border: 4px solid black;
+}
+.titulofotos {
+    background-image: $blue;
+    color: black;    
+}
+.tituloproductos {
+    background-color: $blue;
+    color: black;
+}
+.precios {
+    background-color: $fondo_secundario;
+    color: $color_secundario;
+}
+.tituloprecio {
+    color: $color_secundario;
+}
+.descripcion {
+    color: $color_secundario;
+    background-color: $fondo_primario;
+}
+.titulo {
+    color: $color_secundario;
+    background-color: $fondo_terciario;
+}
+.footer {
+    background-color: $fondo_cuarto;
+    p { color: $color_primario;}
+    }
+.formulario{
+    background-color: $fondo_terciario;
+}
+.titulofotos {
+    color: $color_secundario;
+    background-color: $fondo_secundario;
+}
+.tituloproductos {
+    color: $color_secundario;
+    background-color: $fondo_secundario;
+}

@@ -1,4 +1,170 @@
+$margenderecho: 5px;
+$blue: blue; 
+$fuente: 20px;
+/*condicionales*/
+$fuenteletra: estilo;
+$mostrar:true;
+$ocultar:false;
+$temperatura: 20;
+/*maps*/
+$indexx :(divv:darkblue, barra:blue, precios:blue, footer:black);
+@each $a, $b in $indexx {
+    .#{$a} {
+        background-color: $b;
+    }
+}
+/*bucle*/
+$colorindex :(divv:white, barra: white, precios : black, footer:white);
+@each $a, $b in $colorindex {
+    .#{$a} {
+        color: $b;
+    }
+}
+/*mapget*/
+$estilos: (
+    distancia:10px 30px,
+    margenn:10px, 
+    ancho:400px,
+);   
 body {
     margin: 0;  
    ;}
+.barra {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: ($margenderecho * 2);     
+}
+.imagenn {
+    transition: 5s;
+    &:hover {
+        transform: translate(10px, 10px);}
+    }
+.titulos {
+    transition: 5s;
+    &:hover {
+        transform: scale(3.1);}
+  }
+.menu {
+    padding: 10px 30px;
+     ul {
+      width: auto;   
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+      li {
+        text-decoration: overline; }
+      }
+    }
+.divv {
+    border: 2px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+.headerr {
+    text-align: center;
+    font-size:40px;
+    border: 2px solid black;
+    p {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40px;
+        font-style: italic;
+    }
+}
+.precios {
+    @if $ocultar {
+        display: block;}    
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 10px;    
+    transition: 4s; 
+    &:hover {
+      transform: scale(2.5); }
+    } 
+    .descripcion {
+        text-align: center;
+        font-size: ($fuente*2)-25;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    } 
+.titulo {
+        text-align: center;
+    }
+.footer {
+    margin-bottom: 0px;
+    p {
+        text-align: center;
+    }
+}
+.formulario {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: max-content;
+    width: 100px;
+    height: 45px;
+    margin-bottom: 10px;
+    font-size: ($fuente)+2;
+    transition: all 2s;
+    &:hover {
+        width: 200px;
+        height: 70px;
+        font-size: ($fuente)-2;
+    }
+}
+.locales {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;
+    padding: 20px;
+    border-style: dashed;
+}
+.productos {
+    margin: 10px;
+    padding: 20px;
+    border-style: groove;
+}
+.imagenproducto {
+    transition: 4s;   
+    &:hover {
+    width: 400px;
+    height: 400px;
+    font-size: ($fuente*2)+8;
+    border: 1px solid black; }
+}
+.titulofotos {
+    text-align: center;
+    border: 4px solid black;    
+    margin: 10px;
+    padding: 20px; }
   
+.tituloproductos {
+    text-align: center;
+    border: 4px solid black;
+    background-color: $blue;
+    margin: 10px;
+    padding: 20px; }
+  
+.imagenlocales {
+    transition: 4s; 
+    &:hover {
+      transform: scale(1, 2); }
+    }
+.letracontacto {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+.parrafoproductos {
+    font-size: ($fuente)+8;
+    font-style: italic; }
+  
+.logohistoria {
+    transform: 5s; 
+    &:hover {
+      transform: scale(2.2); }
+    }
+.marginimg {
+    margin-bottom: 10px;
+    margin-top: 10px; }
+.distanciatitulo {
+    margin-top: 10px;
+}
+.imagenprincipal {
+    height: 250px;
+    width: 300px;
+}  
+
+
+
