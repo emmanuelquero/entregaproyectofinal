@@ -121,10 +121,10 @@ body {
 .imagenproducto {
     transition: 4s;   
     &:hover {
-    width: 400px;
-    height: 400px;
-    font-size: ($fuente*2)+8;
-    border: 1px solid black; }
+        width: 400px;
+        height: 400px;
+        font-size: ($fuente*2)+8;
+        border: 1px solid black; }
 }
 .titulofotos {
     text-align: center;
